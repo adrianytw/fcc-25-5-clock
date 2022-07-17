@@ -5,7 +5,7 @@ import Timer from './components/Timer';
 function App() {
   return (
     <div className="App">
-      <h1>25 + 5 Clock</h1>
+      <h1>25+5 clock</h1>
       <LengthControl  />
       <Timer />
 

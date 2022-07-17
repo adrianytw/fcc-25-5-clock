@@ -1,3 +1,5 @@
+import "./LengthControl.css"
+
 import { useSelector } from "react-redux"
 
 const LengthControl = () => {
@@ -6,16 +8,16 @@ const LengthControl = () => {
     return (
         <div className="controls-group">
             <div className="control">
-                <h2 id='break-label'>Break Length</h2>
+                <h2 id='break-label'>break length</h2>
+                <h3 id='break-length'>{breakLength}</h3>
                 <button id='break-decrement'>B-</button>
                 <button id='break-increment'>B+</button>
-                <h3 id='break-length'>{breakLength}</h3>
             </div>
             <div className="control">
-                <h2 id='session-label'>Session Length</h2>
+                <h2 id='session-label'>session length</h2>
+                <h3 id='session-length'>{sessionLength}</h3>
                 <button id='session-decrement'>S+</button>
                 <button id='session-increment'>S-</button>
-                <h3 id='session-length'>{sessionLength}</h3>
             </div>
         </div>
     )
