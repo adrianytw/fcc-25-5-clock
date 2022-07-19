@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     sec: 1500,
+    breakMode: false,
     tick: false,
 }
 
@@ -16,7 +17,7 @@ export const timerSlice = createSlice({
             state.tick = !state.tick
         },
         tickDown: (state) => {
-            if (state.sec > 1) {
+            if (state.sec > 0) {
                 state.sec -= 1
             }
         },
