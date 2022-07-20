@@ -1,7 +1,7 @@
 {
   "name": "fcc-25-5-clock",
   "version": "0.1.0",
-  "homepage": "https://adrianytw.github.io/fcc-25+5-clock",
+  "homepage": "https://adrianytw.github.io/fcc-25-5-clock",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
