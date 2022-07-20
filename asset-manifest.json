@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fcc-25+5-clock/static/css/main.d867e26e.css",
-    "main.js": "/fcc-25+5-clock/static/js/main.0f5d9986.js",
-    "static/js/787.63fa28dd.chunk.js": "/fcc-25+5-clock/static/js/787.63fa28dd.chunk.js",
-    "index.html": "/fcc-25+5-clock/index.html",
-    "main.d867e26e.css.map": "/fcc-25+5-clock/static/css/main.d867e26e.css.map",
-    "main.0f5d9986.js.map": "/fcc-25+5-clock/static/js/main.0f5d9986.js.map",
-    "787.63fa28dd.chunk.js.map": "/fcc-25+5-clock/static/js/787.63fa28dd.chunk.js.map"
+    "main.css": "/fcc-25-5-clock/static/css/main.d867e26e.css",
+    "main.js": "/fcc-25-5-clock/static/js/main.69af83cc.js",
+    "static/js/787.63fa28dd.chunk.js": "/fcc-25-5-clock/static/js/787.63fa28dd.chunk.js",
+    "index.html": "/fcc-25-5-clock/index.html",
+    "main.d867e26e.css.map": "/fcc-25-5-clock/static/css/main.d867e26e.css.map",
+    "main.69af83cc.js.map": "/fcc-25-5-clock/static/js/main.69af83cc.js.map",
+    "787.63fa28dd.chunk.js.map": "/fcc-25-5-clock/static/js/787.63fa28dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d867e26e.css",
-    "static/js/main.0f5d9986.js"
+    "static/js/main.69af83cc.js"
   ]
 }
