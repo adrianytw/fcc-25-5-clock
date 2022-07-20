@@ -64,6 +64,11 @@ export const timerSlice = createSlice({
         },
         chgMode: (state) => {
             state.breakMode = !state.breakMode
+            if (state.breakMode) {
+                state.sec = state.breakLength*60
+            } else {
+                state.sec = state.sessionLength*60
+            }
         },
     },
 })

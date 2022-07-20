@@ -1,40 +1,31 @@
 import "./Timer.css"
 
 import { useSelector, useDispatch } from "react-redux"
-import { tickDown, toggleTick,  resetTimer, setTIme, resetConfig, chgMode } from "../features/timerSlice"
+import { tickDown, toggleTick,  resetTimer, resetConfig, chgMode } from "../features/timerSlice"
 import { useEffect } from "react"
 
 const Timer = () => {
 
-    const { sec, tick, breakMode, breakLength, sessionLength } = useSelector( state => state.timer )
+    const { sec, tick, breakMode } = useSelector( state => state.timer )
     const dispatch = useDispatch()
 
     useEffect( () => {
+        const sound = document.getElementById("beep")
         const interval = setInterval( () => {
             if (tick === false) {
                 return
             }
             if (sec === 0) {
                 dispatch(chgMode())
-                if (breakMode) {
-                    dispatch( setTIme(breakLength*60) )
-                }
-                if (!breakMode) {
-                    dispatch( setTIme(sessionLength*60) )
-                }
-                let playPromise = sound.play()
-                if (playPromise !== undefined) {
-                    playPromise
-                    .then( _ => {})
-                    .catch( e => console.log(e))
-                }
+                return
+            }
+            if (sec === 1) {
+                sound.play()
             }
             dispatch( tickDown() )
         }, 1000);
         return () => clearInterval(interval)
-    }, [tick, sec])
-    
-    const sound = document.getElementById("beep")
+    }, [tick, sec, dispatch])
     
     return (
         <div id="timer-wrap">
@@ -49,6 +40,7 @@ const Timer = () => {
                 onClick={ () => {
                     dispatch(resetConfig())
                     dispatch(resetTimer())
+                    const sound = document.getElementById("beep")
                     sound.pause();
                     sound.currentTime = 0;
                 }}
