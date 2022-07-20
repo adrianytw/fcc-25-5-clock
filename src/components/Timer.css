@@ -1,6 +1,7 @@
 #timer-wrap {
     border-style: groove;
-    padding: 0.5rem 4rem 1.5rem 4rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem 1.5rem 1rem;
 
     align-items: center;
 }

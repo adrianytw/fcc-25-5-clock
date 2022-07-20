@@ -14,10 +14,19 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+}
+
+.App-wrapper {
+  border-style: groove;
+  border-radius: 1rem;
+
+  padding: 1rem;
 }
 
 h1 {
   color: var(--lavender-blue);
+  font-style: italic;
 }
 
 h2 {
